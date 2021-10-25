@@ -1,0 +1,112 @@
+/* Navigation Styling */
+.ct-nav{
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    background-color: black;
+}
+
+
+
+#horizontal-list{
+    min-width: 55vw;
+    list-style: none;
+    padding-top: 6vh;
+    margin-left: 20vh;
+}
+
+#horizontal-list li, #horizontal-list a{
+    display: inline;
+    text-decoration: none;
+    padding: 0.5vw;
+    color: whitesmoke;
+}
+
+#horizontal-list a:nth-last-child(1){
+    font-weight: 700;
+    border-radius: 10px;
+    margin-right: 0.2vw;
+}
+
+/* End of Nav Styles */
+/* Start of Header Section */
+#header-text{
+    margin-top: 20vh;
+}
+
+.header-image{
+    width: 70%;
+    max-width: 100%;
+    margin-top: 10vh;
+
+}
+
+
+
+#features-section{
+    margin: 8vw;
+    background-color: lavender;
+}
+
+.footer-text-flex{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vw;
+    color: whitesmoke;
+}
+
+
+#footer{
+    border-top: 3px solid black;
+    margin-top: 20vh;
+    background-color: black;
+}
+
+#text2{
+    width: 80vh;
+    margin-left: 10vh;
+    margin-top: 10vh;
+
+}
+#form1{
+    position: absolute;
+    right: 50%;
+    top: 20vh;
+    
+}
+#form2{
+    position: absolute;
+    right: 45%;
+    top: 30%;
+}
+.form-group{
+    position: absolute;
+    left: 65vh;
+    top: 40vh;
+
+}
+
+.container{
+    margin-bottom: 50%;
+}
+.form.submit_button{
+    border-radius: 3px black;
+}
+#form3{
+    position: absolute;
+    right: 50%;
+    top: 20vh;
+    
+}
+#form4{
+    position: absolute;
+    right: 45%;
+    top: 30%;
+
+}
+.twitter-timeline{
+    padding-top: 10vh;
+}
+#first{
+    background-color: lightgrey;
+}

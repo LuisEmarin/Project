@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="../static/css/main.css">
+<title>Air Jordan API</title>
+</head>
+<body>
+    <nav class="ct-nav ">
+        <div class="sticky-md-top">
+
+
+            <div>
+                <ul id="horizontal-list">
+                    <a href="{{ url_for('site.home')}}">
+                        <li>The Jordans Project</li>
+                    </a>
+                    <a href="">
+                        <li>Donate</li>
+                    </a>
+                    {% if current_user.is_authenticated %}
+                        
+                    
+                        <a href="{{ url_for('site.profile')}}">
+                            <li>Profile</li>
+                        </a>
+                        <a href="{{url_for('auth.logout')}}">
+                            <li>Log out</li>
+                        </a>
+                        
+                    {% else %}
+                        
+                    <a href="{{ url_for('auth.signin') }}">
+                        <li>Sign In</li>
+                    </a>
+                    <a href="{{ url_for('auth.signup') }}">
+                        <li>Create a Free Account</li>
+                    </a>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+    </nav>
+    {% block content %}
+
+{% endblock content %}
+    <footer class="row" id="footer">
+        <div class="col-2 md-2"></div>
+                <div class="col-2 col-md-2">
+                    <div class="footer-text-flex">
+                        <h4>Buy</h4>
+                        <p>Why Coding Drones </p>
+                        <p>The Jordans Project</p>
+                        <p>Donate</p>
+                        <p>Spread the word</p>
+                        <p>Our Success</p>
+                    </div>
+                </div>
+                <div class="col-2 col-md-2">
+                    <div class="footer-text-flex">
+                        <h4>Sell</h4>
+                        <p>Fee Policy</p>
+                        <p>How To Sell</p>
+                    </div>    
+                </div>
+                <div class="col-2 col-md-2">
+                    <div class="footer-text-flex">
+                        <h4>Support</h4>
+                        <p>Contact US</p>
+                        <p>FAQ's</p>
+                        <p>Donate</p>
+                        <p>Privacy</p>
+                        <p>Cookies</p>
+                    </div>
+                </div>
+                <div class="col-2 col-md-2">
+                    <div class="footer-text-flex">
+                        <h4>About US</h4>
+                        <p>The Jordans Project</p>
+                        <p>Careers</p>
+                        <p>Donate</p>
+                        <p>Spread the Word</p>
+                        <p>Our Success</p>
+                    </div>
+                </div>
+                <div class="col-2 col-md-2">
+                    <div class="footer-text-flex">
+                        <h4>Forum</h4>
+                        <p>Join The Chat</p>
+                        <p>Stay up to date</p>
+                    </div>
+                </div>
+        </div>
+    </footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>

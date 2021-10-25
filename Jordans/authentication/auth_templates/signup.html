@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1 id="form3">Sign Up Here</h1>
+<main class="container" >
+    <div class="row">
+        <aside class="col-12 col-md-6">
+            <h2 id="form4">Create your FREE Account</h2>
+            <form method="POST">
+                {{form.hidden_tag()}}
+                <div class="form-group">
+                    <fieldset id="email-field">
+                        {{ form.email.label}}
+                        {{form.email(class="form-control", placeholder = "Place Email Here...")}}
+                    </fieldset>
+                    <fieldset id="email-field">
+                        {{ form.password.label}}
+                        {{form.password(class="form-control", placeholder = "Place Password Here...")}}
+                    </fieldset>
+                    {{form.submit_button(class = "btn btn_primary btn-block")}}
+                </div>
+            </form>
+        </aside>
+    </div>
+</main>
+
+
+
+
+
+{% endblock content %}
