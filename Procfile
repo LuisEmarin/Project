@@ -1,1 +1,1 @@
-web: gunicorn Jordans:app--preload --timeout 60
+web: gunicorn Jordans:app --preload --timeout 60
